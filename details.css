@@ -1,0 +1,103 @@
+body {
+	background: #DDD0C8;
+    background-color: #DDD0C8;
+	background-size: 400% 400%;
+	height: 100vh;
+}
+.cont{
+    color: #323232;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+img {
+    height: 16rem;
+   }
+.round{
+    border-radius: 50%;
+}
+.card{
+    grid-column: span 1;
+    grid-row: span 1;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.two{
+    grid-column: span 2;
+    grid-row: span 1;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.three{
+    grid-column: span 3;
+    grid-row: span 1;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.mainhead{
+ font-size: 1rem;
+}
+.subhead{
+    font-size: 1rem;
+}
+.formbg{
+    height: fit-content;
+    color: #DDD0C8;
+    border-radius: 30px;
+    size: 50px;
+    font-size: 18px;
+    padding: 20px;
+    margin-bottom: 2rem;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #DDD0C8;
+    color: #DDD0C8;
+}
+
+th,
+td {
+    padding: 8px;
+} 
+
+.scroll{
+    padding: 5rem 0rem 5rem 0rem;
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDD0C8 ;
+    overflow: auto;
+    white-space: nowrap;
+   }
+
+#generateButton{
+    color: #323232;
+    border: 1px solid #323232;
+    font-family: cursive;
+    background-color: #DDD0C8;
+    font-size: medium;
+    border-radius: 10%;
+}
+.sattu{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}

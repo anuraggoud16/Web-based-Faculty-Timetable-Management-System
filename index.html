@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACULTY TIME TABLE MANAGEMENT SYSTEM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <nav style="background-color: #323232;" class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+        <div class="container-fluid">    
+          <a style="font-family: cursive; color: #DDD0C8;" class="navbar-brand" href="#">Faculty Time Table Designer</a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="navbar-collapse collapse" id="navbarsExample01">
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./resume.html">Developer details</a>
+              </li>
+              
+            </ul>
+            <form role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="cont">
+        <div class="three" style="height: 20rem;">
+            <img class="round" src="imgs/teacher.jpg" alt="teacher">
+        </div>
+        <div class="three subhead">
+            <h3 style="color: #323232; font-size: 25px; font-family: cursive;" >Fill the Requirements:</h3> 
+        </div>
+        <div style="font-family: cursive;" class="three formbg">
+            <div style="width: fit-content; background-color: #323232; padding: 2rem; border-radius: 5%;">
+              <form>
+                <label for="nme">Your Department Name:</label>
+                <div>
+                    <input type="text" id="nme" required>
+                </div>
+                <br>
+                <label for="numSections">Number of Sections:</label>
+                <div>
+                    <input type="number" id="numSections">
+                </div>
+                <br>
+                <label for="periodsPerDay">Total Periods per Day:</label>
+                <div>
+                    <input type="number" id="periodsPerDay">
+                </div>
+                <br>
+                <label for="numSubjects">Number of Subjects:</label>
+                <div>
+                    <input type="number" id="numSubjects">
+                </div>
+                <br>
+                <label for="periodsPerSubject">Periods per subject in Week:</label>
+                <div>
+                    <input type="number" id="periodsPerSubject">
+                </div>
+                <br>
+                <label for="numFaculty">Number of Faculty:</label>
+                <div>     
+                    <input type="number" id="numFaculty">
+                </div>
+                <br>
+                <div class="submit">
+                    <button  id="generateButton" type="button">Generate</button>
+                </div>
+                <div>
+                    <p id="plzScr">
+                         
+                    </p>
+                </div>
+             </form>
+            </div>
+        </div>
+        <div class="three">
+            <h2 id="ht" style="font-family: cursive; color: #323232; font-size: 30px;"> Anurag welcomes you! </h2>
+        </div>
+    </div>
+    <div class="sattu">
+      <div id="scr" class="scroll">
+        <table id="timetablesContainer">
+            <!-- Timetable will be displayed here -->
+        </table>
+     </div>
+    </div>
+    
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="./resume.html" class="nav-link px-2 text-body-secondary">Developer-Details</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© Gurumoorthi (Incharge HOD, IT dept cmrcet)</p>
+      </footer>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
